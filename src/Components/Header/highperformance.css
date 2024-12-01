@@ -1,0 +1,201 @@
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: black;
+}
+
+/* First Section Styles */
+.highperform-fullpage {
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+}
+
+.highperform-content {
+  max-width: 50%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.highperform-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.highperform-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.highperform-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Second Section Styles */
+.highperform-fullpage2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.highperform-content2 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+}
+
+.highperform-content2 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.highperform-content2 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Third Section Styles */
+.third-section {
+  width: 100%;
+  padding: 30px 20px;
+  background-color:rgb(39, 38, 38);
+  color: white; 
+  text-align: center;
+  margin-top: 30px; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.highperform-content3 {
+  padding: 10px;
+  text-align: left;
+  max-width: 900px;
+}
+
+.highperform-content3 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.highperform-content3 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Fourth Section Styles */
+.fourth-section {
+  width: 100%;
+  padding: 3px 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.image-container { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+  gap: 40px;
+  padding: 20px;
+}
+
+.image-item {
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.image-item img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.image-item p {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.image-item:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover p {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Optional: Ensure the layout adapts to smaller screens */
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller columns for small screens */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .highperform-content,
+  .highperform-content2 {
+    max-width: 90%; 
+  }
+
+  .highperform-content h1,
+  .highperform-content2 h1 {
+    font-size: 2rem; 
+  }
+
+ 
+}
+
+
+
+/* Basic styling for links */
+a {
+  color: #fff; 
+  text-decoration: none;
+  font-size: 16px; 
+  font-weight: 500; 
+  padding: 8px 16px;
+  border-radius: 4px; 
+  transition: color 0.3s, background-color 0.3s;
+}
+
+

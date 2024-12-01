@@ -1,0 +1,26 @@
+/* General App Styles */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa; /* Light background for main content */
+  color: #333;
+  min-height: 100vh;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
